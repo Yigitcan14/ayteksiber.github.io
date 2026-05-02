@@ -2,47 +2,65 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Aytek Siber | Güvenlik Protokolü</title>
+    <title>Aytek Siber | Siber Güvenlik</title>
     <style>
-        body { background-color: #0b0e14; color: #fff; font-family: 'Segoe UI', sans-serif; text-align: center; padding-top: 50px; }
-        .logo { font-size: 2em; font-weight: bold; color: #00d4ff; margin-bottom: 20px; }
-        .hero { margin-top: 50px; border: 1px solid #1a2a3a; padding: 40px; display: inline-block; border-radius: 15px; }
-        .contact { margin-top: 30px; background: #1a2a3a; padding: 20px; border-radius: 10px; }
+        body { margin: 0; background-color: #050b16; color: #fff; font-family: 'Arial', sans-serif; }
+        
+        /* Navigasyon */
+        header { display: flex; justify-content: space-between; padding: 20px 10%; align-items: center; border-bottom: 1px solid #1a2a3a; }
+        .logo { font-size: 1.8em; font-weight: bold; color: #00d4ff; }
+        .nav-links a { color: #fff; text-decoration: none; margin-left: 30px; font-weight: bold; }
+        .quote-btn { background: #00d4ff; padding: 10px 20px; border-radius: 5px; color: #000; text-decoration: none; }
+
+        /* Ana Bölüm */
+        .hero { padding: 100px 10%; display: flex; align-items: center; justify-content: space-between; }
+        .hero-content h1 { font-size: 3.5em; line-height: 1.1; margin-bottom: 20px; }
+        .hero-content p { color: #aaa; font-size: 1.2em; max-width: 500px; }
+        .hero-buttons { margin-top: 30px; }
+        .btn-start { background: #fff; padding: 15px 30px; border-radius: 5px; color: #000; text-decoration: none; margin-right: 20px; font-weight: bold; }
+        .btn-contact { border: 2px solid #00d4ff; color: #00d4ff; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+
+        /* İletişim Kutusu */
+        .footer-info { background: #0b1424; padding: 50px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; border-top: 2px solid #00d4ff; }
+        .info-title { font-size: 1.5em; color: #00d4ff; margin-bottom: 20px; }
+        .contact-item { margin-bottom: 15px; font-size: 1.1em; }
     </style>
 </head>
-<body>
+<body oncopy="return false" oncontextmenu="return false">
 
-    <div class="logo">Aytek Siber</div>
+    <header>
+        <div class="logo">Aytek Siber</div>
+        <nav class="nav-links">
+            <a href="#">Home</a> <a href="#">About</a> <a href="#">Services</a> <a href="#" class="quote-btn">Get Free Quotes</a>
+        </nav>
+    </header>
 
     <div class="hero">
-        <h1>Siber Güvenlik Çözümleri</h1>
-        <p>Ar-Ge Tabanlı Güvenlik Protokolleri ve Yapay Zeka Destekli Analiz Sistemi</p>
+        <div class="hero-content">
+            <h1>En iyi Savunma Sistemleri<br><span style="color: #00d4ff;">Aytek Siber Solutions</span></h1>
+            <p>Ar-Ge Yöntemleri A8 SCAN Plus+ ve dahası</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-start">Get Started</a>
+                <a href="#" class="btn-contact">Contact Us</a>
+            </div>
+        </div>
+        <div style="width: 500px; height: 350px; border: 1px solid #1a2a3a; background: #0f172a; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+            SİBER GÜVENLİK GÖRSELİ BURAYA
+        </div>
     </div>
 
-    <div class="contact">
-        <h2>İletişim & Destek</h2>
-        <p>📱 Telefon: +90 507 603 67 14</p>
-        <p>📧 E-Posta: yigitcankozlu856@gmail.com</p>
-        <p>💬 Discord: ! may0z.inc</p>
+    <div class="footer-info">
+        <div>
+            <div class="info-title">İletişim & Destek</div>
+            <div class="contact-item">📱 Telefon: +90 507 603 67 14</div>
+            <div class="contact-item">📧 E-Posta: yigitcankozlu856@gmail.com</div>
+        </div>
+        <div>
+            <div class="info-title">Ek Kaynaklar</div>
+            <div class="contact-item">💬 Discord: ! may0z.inc </div>
+            <div class="contact-item">🌐 Portal: portal.ayteksiber.com</div>
+        </div>
     </div>
 
 </body>
 </html>
-
-<script>
-    const text = "Aytek Siber ile Sistemleriniz Daha Güvenli";
-    let i = 0;
-    function typeWriter() {
-        if (i < text.length) {
-            document.getElementById("Tarama").innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-        }
-    }
-    window.onload = typeWriter;
-</script>
-<p id="Tarama" style="color: #0f0;"></p>
-
-<script>
-    document.addEventListener('contextmenu', event => event.preventDefault());
-</script>
