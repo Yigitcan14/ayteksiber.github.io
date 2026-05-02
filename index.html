@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Aytek Siber | Güvenlik Protokolü</title>
+    <style>
+        body { background-color: #0b0e14; color: #fff; font-family: 'Segoe UI', sans-serif; text-align: center; padding-top: 50px; }
+        .logo { font-size: 2em; font-weight: bold; color: #00d4ff; margin-bottom: 20px; }
+        .hero { margin-top: 50px; border: 1px solid #1a2a3a; padding: 40px; display: inline-block; border-radius: 15px; }
+        .contact { margin-top: 30px; background: #1a2a3a; padding: 20px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="logo">Aytek Siber</div>
+
+    <div class="hero">
+        <h1>Siber Güvenlik Çözümleri</h1>
+        <p>Ar-Ge Tabanlı Güvenlik Protokolleri ve Yapay Zeka Destekli Analiz Sistemi</p>
+    </div>
+
+    <div class="contact">
+        <h2>İletişim & Destek</h2>
+        <p>📱 Telefon: +90 507 603 67 14</p>
+        <p>📧 E-Posta: yigitcankozlu856@gmail.com</p>
+        <p>💬 Discord: ! may0z.inc</p>
+    </div>
+
+</body>
+</html>
+
+<script>
+    const text = "Aytek Siber ile Sistemleriniz Daha Güvenli";
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("Tarama").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+    window.onload = typeWriter;
+</script>
+<p id="Tarama" style="color: #0f0;"></p>
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
